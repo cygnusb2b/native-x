@@ -7,7 +7,7 @@ services:
     command: --quiet
   accounts:
     tty: true
-    image: node:10.13
+    image: node:10.13-alpine
     entrypoint: "yarn run:test"
     working_dir: /app
     volumes:
