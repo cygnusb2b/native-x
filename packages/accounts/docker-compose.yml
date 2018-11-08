@@ -6,7 +6,7 @@ networks:
 services:
   accounts:
     tty: true
-    image: node:10.13
+    image: node:10.13-alpine
     entrypoint: "yarn run:dev"
     working_dir: /app
     volumes:
