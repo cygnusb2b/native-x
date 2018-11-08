@@ -1,0 +1,22 @@
+version: '3.5'
+services:
+  nats:
+    image: nats:latest
+  mongo:
+    image: mongo:3.6
+    command: --quiet
+  accounts:
+    tty: true
+    image: node:10.13
+    entrypoint: "yarn run:test"
+    working_dir: /app
+    volumes:
+      - ../:/app:cached
+      - node_modules:/app/node_modules:cached
+    restart: "no"
+    environment:
+      MONGO_DSN: mongodb://mongo:27017/fortnight
+      NATS_DSN: nats://nats:4222
+      NODE_ENV: test
+volumes:
+  node_modules: {}
