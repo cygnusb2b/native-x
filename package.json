@@ -1,0 +1,11 @@
+{
+  "name": "nativex",
+  "version": "1.0.0",
+  "author": "Josh Worden <josh@limit0.io>",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn stop; docker-compose -p nativex up --quiet-pull",
+    "stop": "docker-compose -p nativex down",
+    "kill": "docker-compose -p nativex down; docker volume rm $(docker volume ls -q | grep nativex)"
+  }
+}
