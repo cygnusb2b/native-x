@@ -39,24 +39,24 @@ The services currently included are
 ### graph
 An Apollo/GraphQL/Express server providing CRUD for NX data.
 
-[View service documentation](./graph#readme)
+[View service documentation](./packages/graph#readme)
 
 ### app
 An ember application for managing NX data
 
-[View service documentation](./app#readme)
+[View service documentation](./packages/app#readme)
 
 ### web
 A NextJS web frontend for displaying NX data
 
-[View service documentation](./web#readme)
+[View service documentation](./packages/web#readme)
 
 ### accounts
 A moleculer-based microservice for managing NX accounts
 
-[View service documentation](./accounts#readme)
+[View service documentation](./packages/accounts#readme)
 
 ### onboarding
 An Apollo/GraphQL/Express server for creating accounts and managing infrastructure
 
-[View service documentation](./onboarding#readme)
+[View service documentation](./packages/onboarding#readme)
