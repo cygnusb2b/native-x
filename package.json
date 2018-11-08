@@ -7,5 +7,8 @@
     "start": "yarn stop; docker-compose -p nativex up --quiet-pull",
     "stop": "docker-compose -p nativex down",
     "kill": "docker-compose -p nativex down; docker volume rm $(docker volume ls -q | grep nativex)"
+  },
+  "devDependencies": {
+    "lerna": "^3.4.3"
   }
 }
